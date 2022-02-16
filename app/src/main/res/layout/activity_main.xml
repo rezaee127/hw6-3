@@ -26,7 +26,7 @@
 
         <Button
             android:id="@+id/button6"
-            android:layout_width="174dp"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="20dp"
@@ -105,9 +105,8 @@
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="174dp"
+            android:layout_width="165dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:backgroundTint="@color/purple_600"
             android:minHeight="48dp"
@@ -115,8 +114,8 @@
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="@+id/button6"
             app:layout_constraintEnd_toStartOf="@+id/button6"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@id/imageView2"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="@id/guideline5"
             app:layout_constraintTop_toTopOf="@+id/button6"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -258,22 +257,43 @@
             android:id="@+id/guideline5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="391dp"
+            android:layout_marginBottom="826dp"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="20dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="94dp"
+            android:layout_marginEnd="317dp"
+            android:layout_marginBottom="826dp"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="94dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_begin="94dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="194dp"
+            android:layout_marginEnd="217dp"
+            android:layout_marginBottom="826dp"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="194dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_begin="194dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
