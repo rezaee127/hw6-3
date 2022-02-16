@@ -107,8 +107,8 @@
             android:id="@+id/button5"
             android:layout_width="174dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:backgroundTint="@color/purple_600"
             android:minHeight="48dp"
             android:text="REnt from $ 4.99"
@@ -116,7 +116,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/button6"
             app:layout_constraintEnd_toStartOf="@+id/button6"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@id/imageView2"
             app:layout_constraintTop_toTopOf="@+id/button6"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -163,7 +163,8 @@
             android:id="@+id/button"
             android:layout_width="73dp"
             android:layout_height="84dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="32dp"
             android:backgroundTint="@color/white2"
             app:cornerRadius="60dp"
             app:icon="@drawable/t1"
@@ -174,6 +175,7 @@
             app:iconTintMode="multiply"
             app:layout_constraintBottom_toBottomOf="@+id/button2"
             app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="@id/guideline7"
             app:layout_constraintTop_toTopOf="@+id/button2"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -181,6 +183,7 @@
             android:id="@+id/button3"
             android:layout_width="73dp"
             android:layout_height="84dp"
+            android:layout_marginStart="12dp"
             android:layout_marginEnd="24dp"
             android:backgroundTint="@color/purple_600"
             app:cornerRadius="60dp"
@@ -189,6 +192,7 @@
             app:iconPadding="0dp"
             app:layout_constraintBottom_toBottomOf="@+id/button"
             app:layout_constraintEnd_toStartOf="@+id/button"
+            app:layout_constraintStart_toStartOf="@id/guideline6"
             app:layout_constraintTop_toTopOf="@+id/button"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -196,7 +200,6 @@
             android:id="@+id/button4"
             android:layout_width="73dp"
             android:layout_height="84dp"
-            android:layout_marginStart="20dp"
             android:layout_marginEnd="24dp"
             android:backgroundTint="@color/purple_600"
             android:text="7.2"
@@ -204,7 +207,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/button3"
             app:layout_constraintEnd_toStartOf="@+id/button3"
             app:layout_constraintHorizontal_bias="0.233"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline5"
             app:layout_constraintTop_toTopOf="@+id/button3"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -250,6 +253,27 @@
             app:layout_constraintEnd_toEndOf="@+id/button2"
             app:layout_constraintStart_toStartOf="@+id/button2"
             app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="94dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="194dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
