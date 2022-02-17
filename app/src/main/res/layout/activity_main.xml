@@ -68,12 +68,11 @@
             android:layout_width="174dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="20dp"
             android:backgroundTint="@color/purple_600"
             android:minHeight="48dp"
             android:text="bye from $9.99"
             android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline5"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/button5"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -82,7 +81,6 @@
             android:id="@+id/button5"
             android:layout_width="174dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
             android:layout_marginEnd="16dp"
             android:backgroundTint="@color/purple_600"
             android:minHeight="48dp"
@@ -91,7 +89,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/button6"
             app:layout_constraintEnd_toStartOf="@+id/button6"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline4"
             app:layout_constraintTop_toTopOf="@+id/button6"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -119,7 +117,7 @@
             app:icon="@drawable/ic_baseline_view_carousel_24"
             app:iconGravity="textStart"
             app:iconPadding="0dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline5"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/button"
             app:layout_constraintTop_toBottomOf="@+id/divider" />
@@ -173,7 +171,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/button3"
             app:layout_constraintEnd_toStartOf="@+id/button3"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline4"
             app:layout_constraintTop_toTopOf="@+id/button3"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -262,6 +260,20 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
